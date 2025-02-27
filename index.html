@@ -16,8 +16,17 @@
             padding: 0;
             font-family: Arial, Helvetica, sans-serif;
         }
+        .container{
+            width: 100%;
+            display: flex;
+            max-width: 350px;
+        }
         h1,h2{
             margin: 4px 0;
+        }
+        h2{
+            font-weight: 600;
+            font-size: 18px;
         }
         p{
             margin: 2px 0;
@@ -33,7 +42,8 @@
             text-underline-offset: 4px;
             padding: 8px 0;
             color: black;
-            font-weight: 600;
+            font-weight: 500;
+            font-size: 16px;
         }
         a:hover{
             color:crimson;
@@ -51,14 +61,27 @@
             padding:  16px 32px;
             text-decoration: none;
         }
+        .social-link{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
     </style>
   </head>
   <body>
-    <h1>Sanjeet's Portfolio</h1>
+    <div class="profile-photo">
+        <img src="sanjeet-profile-photo.png" width="160px" height="auto" alt="Sanjeet SIngh" />
+    </div>
+    <h1>Sanjeet Singh</h1>
     <h2>Product Designer</h2>
     <div class="contact">
         <p><a href="mailto:skusiss@gmail.com">skusiss@gmail.com</a></p>
         <p><a href="tel:+919560246999">+91 95602 46999</a></p>
+    </div>
+    <div class="social-link">
+        <a href="https://www.linkedin.com/in/skusiss/" target="_blank">LinkedIn/in/skusiss</a>
+        <a href="https://www.behance.net/skusiss" target="_blank">Behance.net/skusiss</a>
     </div>
     <div class="contact">
         <a href="sanjeet-V5-product-designer-cv.pdf" class="btn">Download CV</a>
